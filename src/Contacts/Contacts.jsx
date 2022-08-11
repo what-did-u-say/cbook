@@ -27,7 +27,7 @@ const Contacts = () => {
             > <ul className={styles.list1a}>
                     {users.map((item) => {
                         return (
-                            <TableContact className={styles.list1a} item={item} />
+                            <TableContact key={item.id} className={styles.list1a} item={item} />
                         )
 
                     }
