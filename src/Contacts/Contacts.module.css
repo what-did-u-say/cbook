@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .container {
     display: flex;
     align-items: center;
@@ -80,4 +82,89 @@
 
 .list1a li:hover:after {
     width: 100%;
+}
+
+.draw {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 700px;
+    bottom: 70px;
+}
+
+.draw button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.draw button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+.d2 {
+    background: #DABB52;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.help form {
+    position: relative;
+    width: 300px;
+    margin: -30px auto;
+}
+
+.d2 div {
+    padding: 30px 0;
+}
+
+
+.d2 input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.help input {
+    width: 100%;
+    height: 42px;
+    background: #F9F0DA;
+    padding-left: 15px;
+}
+
+.d2 button {
+    height: 29px;
+    width: 27px;
+    position: absolute;
+    top: 8px;
+    right: -8px;
+    background: #F15B42;
+    cursor: pointer;
+}
+
+.d2 button:before {
+    content: ">";
+    font-family: FontAwesome, sans-serif;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: 900;
 }

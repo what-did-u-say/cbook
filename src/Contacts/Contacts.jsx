@@ -7,6 +7,7 @@ const Contacts = () => {
 
     const [users, setUsers] = useState([])
 
+
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then(response => {
@@ -20,26 +21,39 @@ const Contacts = () => {
     }, [])
 
     return (
+        <>
+            <div className={styles.container}>
+                <h1>Contact book</h1>
+                <div className={styles.abrakadabra}>
+                    <ul className={styles.list1a}>
+                        {users.map((item) => {
+                            return (
+                                <TableContact key={item.id} className={styles.list1a} item={item} />
+                            )
 
-        <div className={styles.container}>
-            <h1>Contact book</h1>
-            <div className={styles.abrakadabra}
-            > <ul className={styles.list1a}>
-                    {users.map((item) => {
-                        return (
-                            <TableContact key={item.id} className={styles.list1a} item={item} />
+                        }
                         )
+                        }
 
-                    }
-                    )
-                    }
+                    </ul>
+                </div>
 
+            </div>
 
-                </ul>
+            <div className={styles.draw}>
+                <button>A-Z</button>
             </div>
 
 
-        </div>
+            <div className={styles.help}>
+                <form className={styles.d2}>
+                    <input type="text" placeholder="Искать здесь..." />
+                    <button type="submit" />
+                </form>
+            </div>
+
+
+        </>
     );
 };
 export default Contacts
