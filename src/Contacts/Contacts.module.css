@@ -91,7 +91,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 700px;
-    bottom: 70px;
+    bottom: -10px;
 }
 
 .draw button {
@@ -126,6 +126,10 @@
     margin: 0;
 }
 
+.help {
+    margin-bottom: 50px;
+}
+
 .help form {
     position: relative;
     width: 300px;
@@ -157,14 +161,5 @@ button {
     position: absolute;
     top: 8px;
     right: -8px;
-    background: #F15B42;
-    cursor: pointer;
-}
-
-.d2 button:before {
-    content: ">";
-    font-family: FontAwesome, sans-serif;
-    color: #F9F0DA;
-    font-size: 20px;
-    font-weight: 900;
+    background: #F9F0DA;
 }
